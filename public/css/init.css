@@ -1,0 +1,63 @@
+﻿/* 初始化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+a {
+    text-decoration: none;
+}
+input{
+    outline-style: none;
+    border:none;
+}
+/*清除浮动以后直接写这个调用*/
+/*清除浮动最现代、最流行、最简单的方式*/
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/*兼容IE67*/
+.clearfix {
+  *zoom: 1;
+}
+
+ul li{
+    list-style: none;
+}
+/*废物利用*/
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+img {
+    border: 0;
+    display:block; /*去除底边的像素*/
+}
+html,body{
+  height: 100%;
+}
+/*单行溢出*/
+.one-txt-cut{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/*多行溢出 手机端使用*/
+.txt-cut{
+  overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

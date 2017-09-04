@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <span></span>
+    <p></p>
+    <div></div>
+</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<script src="unit.js"></script>
+<script>
+//    console.log(window)
+
+    var div = Tools.getElem("div");
+var first = Tools.getFirst(div[0]);
+    console.log(first);
+var next = Tools.getNext(first);
+    console.log(next);
+
+//var eventTools={
+//    getEvt:function (e) {//返回事件参数对象
+//        return window.event?window.event:e;
+//    },
+//    getClientX:function (e) {//返回的是可视区域的横坐标
+//        return this.getEvt(e).clientX;
+//    },
+//    getClientY:function (e) {//返回的是可视区域的纵坐标
+//        return this.getEvt(e).clientY;
+//    },
+//    getScrollLeft:function () {//卷曲出去的横坐标
+//        return window.pageXOffset||document.documentElement.scrollLeft||document.body.scrollLeft||0;
+//    },
+//    getScrollTop:function () {//卷曲出去的纵坐标
+//        return window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0;
+//    },
+//    getPageX:function (e) {//文档的横坐标:可视区域的横坐标+卷曲出去的横坐标
+//        return this.getEvt(e).pageX?this.getEvt(e).pageX:this.getClientX(e)+this.getScrollLeft();
+//    },
+//    getPageY:function (e) {//文档的纵坐标:可视区域的纵坐标+卷曲出去的纵坐标
+//        return this.getEvt(e).pageY?this.getEvt(e).pageY:this.getClientY(e)+this.getScrollTop();
+//    }
+//};
+//console.log(eventTools.getClientX())
+</script>
+</body>
+</html>

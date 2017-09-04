@@ -1,0 +1,45 @@
+body{
+  background-color: #ccc;
+  & .slid-wrap{
+    width: 1200px;
+    margin: 50px auto;
+    & .wrap{
+      height: 500px;
+      position: relative;
+      & ul {
+        list-style: none;
+        & li{
+          position: absolute;
+          left:200px;
+          top:0;
+          & img{
+            width: 100%;
+          }
+      }
+      }
+      & .arrow {
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        z-index: 1000;
+        width: 100%;
+        .prev, .next {
+          display: block;
+          width: 76px;
+          height: 112px;
+          position: absolute;
+          z-index: 99;
+          cursor:pointer;
+        }
+        .prev {
+          left: 0;
+          background: url(../images/prev.png) no-repeat;
+        }
+        .next {
+          right: 0;
+          background-image: url(../images/next.png);
+        }
+      }
+    }
+  }
+}

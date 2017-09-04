@@ -1,0 +1,46 @@
+body {
+  background-color: #ccc;
+}
+body .slid-wrap {
+  width: 1200px;
+  margin: 50px auto;
+}
+body .slid-wrap .wrap {
+  height: 500px;
+  position: relative;
+}
+body .slid-wrap .wrap ul {
+  list-style: none;
+}
+body .slid-wrap .wrap ul li {
+  position: absolute;
+  left: 200px;
+  top: 0;
+}
+body .slid-wrap .wrap ul li img {
+  width: 100%;
+}
+body .slid-wrap .wrap .arrow {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  width: 100%;
+}
+body .slid-wrap .wrap .arrow .prev,
+body .slid-wrap .wrap .arrow .next {
+  display: block;
+  width: 76px;
+  height: 112px;
+  position: absolute;
+  z-index: 99;
+  cursor: pointer;
+}
+body .slid-wrap .wrap .arrow .prev {
+  left: 0;
+  background: url(../images/prev.png) no-repeat;
+}
+body .slid-wrap .wrap .arrow .next {
+  right: 0;
+  background-image: url(../images/next.png);
+}

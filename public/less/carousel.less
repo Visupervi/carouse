@@ -1,0 +1,50 @@
+body {
+  background-color: #ccc;
+  position: relative;
+}
+.carousel {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  overflow: hidden;
+  transform: translateY(-50%);
+  height: 10rem;
+  width: 100%;
+  & ul {
+    height: 100%;
+    & li {
+      position: absolute;
+      list-style: none;
+      float: left;
+      width: 18.75rem;
+      height: 10rem;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  & ol {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 999;
+    transform: translateX(-50%);
+    & li {
+      font-size: 0.3rem;
+      text-align: center;
+      line-height: 1rem;
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid #eee;
+      border-radius: 50%;
+      list-style: none;
+      float: left;
+      margin-right: 0.25rem;
+    }
+    & .active {
+      background-color: #fff;
+    }
+  }
+}
+
